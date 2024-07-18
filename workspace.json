@@ -1,0 +1,713 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-javascript",
+  "lastModifiedDate" : "2024-07-18T22:38:54Z",
+  "model" : {
+    "deploymentNodes" : [ {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ {
+              "children" : [ {
+                "children" : [ {
+                  "children" : [ {
+                    "containerInstances" : [ {
+                      "containerId" : "3",
+                      "deploymentGroups" : [ "Default" ],
+                      "environment" : "Production",
+                      "id" : "23",
+                      "instanceId" : 1,
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "e3e76adb-691c-4617-a6cf-c28525e01c33"
+                      },
+                      "tags" : "Container Instance"
+                    } ],
+                    "environment" : "Production",
+                    "id" : "22",
+                    "instances" : "1",
+                    "name" : "Microsoft Azure - VM Scale Sets (Front End) 1",
+                    "properties" : {
+                      "structurizr.dsl.identifier" : "vmssfrontend1"
+                    },
+                    "relationships" : [ {
+                      "description" : "Sends requests to",
+                      "destinationId" : "18",
+                      "id" : "42",
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "dd0bef3c-7d63-4405-951e-da44ed6d7c13"
+                      },
+                      "sourceId" : "22",
+                      "tags" : "Relationship"
+                    } ],
+                    "tags" : "Element,Deployment Node,Microsoft Azure - VM Scale Sets"
+                  }, {
+                    "containerInstances" : [ {
+                      "containerId" : "4",
+                      "deploymentGroups" : [ "Default" ],
+                      "environment" : "Production",
+                      "id" : "25",
+                      "instanceId" : 1,
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "09398530-b713-4d27-9eac-2e2f28450bf9"
+                      },
+                      "tags" : "Container Instance"
+                    } ],
+                    "environment" : "Production",
+                    "id" : "24",
+                    "instances" : "1",
+                    "name" : "Microsoft Azure - VM Scale Sets (Back End) 1",
+                    "properties" : {
+                      "structurizr.dsl.identifier" : "vmssbackend1"
+                    },
+                    "relationships" : [ {
+                      "description" : "Sends requests to",
+                      "destinationId" : "19",
+                      "id" : "46",
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "8b3b5c93-76cd-4570-b05c-487f8151a7e3"
+                      },
+                      "sourceId" : "24",
+                      "tags" : "Relationship"
+                    } ],
+                    "tags" : "Element,Deployment Node,Microsoft Azure - VM Scale Sets"
+                  }, {
+                    "containerInstances" : [ {
+                      "containerId" : "5",
+                      "deploymentGroups" : [ "Default" ],
+                      "environment" : "Production",
+                      "id" : "27",
+                      "instanceId" : 1,
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "9737efde-fc0b-4adb-997e-2a7c1c16c1d0"
+                      },
+                      "tags" : "Container Instance"
+                    } ],
+                    "environment" : "Production",
+                    "id" : "26",
+                    "instances" : "1",
+                    "name" : "Microsoft Azure - SQL Database 1",
+                    "properties" : {
+                      "structurizr.dsl.identifier" : "sqldatabase1"
+                    },
+                    "tags" : "Element,Deployment Node,Microsoft Azure - SQL Database"
+                  } ],
+                  "environment" : "Production",
+                  "id" : "21",
+                  "instances" : "1",
+                  "name" : "Microsoft Azure - Subnet 1",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "subnet1",
+                    "availabilityZone" : "1"
+                  },
+                  "tags" : "Element,Deployment Node,Microsoft Azure - Subnets"
+                } ],
+                "environment" : "Production",
+                "id" : "20",
+                "instances" : "1",
+                "name" : "Availability Zone 1",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "availabilityzone1"
+                },
+                "tags" : "Element,Deployment Node,Microsoft Azure - Availability Zones"
+              }, {
+                "children" : [ {
+                  "children" : [ {
+                    "containerInstances" : [ {
+                      "containerId" : "3",
+                      "deploymentGroups" : [ "Default" ],
+                      "environment" : "Production",
+                      "id" : "31",
+                      "instanceId" : 1,
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "91f00ba9-df7a-476b-af8f-55fdd83b6b87"
+                      },
+                      "tags" : "Container Instance"
+                    } ],
+                    "environment" : "Production",
+                    "id" : "30",
+                    "instances" : "1",
+                    "name" : "Microsoft Azure - VM Scale Sets (Front End) 2",
+                    "properties" : {
+                      "structurizr.dsl.identifier" : "vmssfrontend2"
+                    },
+                    "relationships" : [ {
+                      "description" : "Sends requests to",
+                      "destinationId" : "18",
+                      "id" : "43",
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "b624db0c-a439-4f2b-8c0b-25e5c15438eb"
+                      },
+                      "sourceId" : "30",
+                      "tags" : "Relationship"
+                    } ],
+                    "tags" : "Element,Deployment Node,Microsoft Azure - VM Scale Sets"
+                  }, {
+                    "containerInstances" : [ {
+                      "containerId" : "4",
+                      "deploymentGroups" : [ "Default" ],
+                      "environment" : "Production",
+                      "id" : "33",
+                      "instanceId" : 1,
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "135c7e20-a427-4b84-8a5c-5254301d6c29"
+                      },
+                      "tags" : "Container Instance"
+                    } ],
+                    "environment" : "Production",
+                    "id" : "32",
+                    "instances" : "1",
+                    "name" : "Microsoft Azure - VM Scale Sets (Back End) 2",
+                    "properties" : {
+                      "structurizr.dsl.identifier" : "vmssbackend2"
+                    },
+                    "relationships" : [ {
+                      "description" : "Sends requests to",
+                      "destinationId" : "19",
+                      "id" : "47",
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "72e2d371-fca8-41f9-991c-dfe8eeb0d748"
+                      },
+                      "sourceId" : "32",
+                      "tags" : "Relationship"
+                    } ],
+                    "tags" : "Element,Deployment Node,Microsoft Azure - VM Scale Sets"
+                  }, {
+                    "containerInstances" : [ {
+                      "containerId" : "5",
+                      "deploymentGroups" : [ "Default" ],
+                      "environment" : "Production",
+                      "id" : "35",
+                      "instanceId" : 1,
+                      "properties" : {
+                        "structurizr.dsl.identifier" : "7fc90963-8404-4051-a7e2-5b4ea5fd31d2"
+                      },
+                      "tags" : "Container Instance"
+                    } ],
+                    "environment" : "Production",
+                    "id" : "34",
+                    "instances" : "1",
+                    "name" : "Microsoft Azure - SQL Database 2",
+                    "properties" : {
+                      "structurizr.dsl.identifier" : "sqldatabase2"
+                    },
+                    "tags" : "Element,Deployment Node,Microsoft Azure - SQL Database"
+                  } ],
+                  "environment" : "Production",
+                  "id" : "29",
+                  "instances" : "1",
+                  "name" : "Microsoft Azure - Subnet 2",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "subnet2",
+                    "availabilityZone" : "2"
+                  },
+                  "tags" : "Element,Deployment Node,Microsoft Azure - Subnets"
+                } ],
+                "environment" : "Production",
+                "id" : "28",
+                "instances" : "1",
+                "name" : "Availability Zone 2",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "availabilityzone2"
+                },
+                "tags" : "Element,Deployment Node,Microsoft Azure - Availability Zones"
+              } ],
+              "environment" : "Production",
+              "id" : "12",
+              "infrastructureNodes" : [ {
+                "description" : "Handles DNS resolution for incoming requests.",
+                "environment" : "Production",
+                "id" : "13",
+                "name" : "Recursive DNS",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "dns"
+                },
+                "relationships" : [ {
+                  "description" : "Resolves DNS queries to",
+                  "destinationId" : "14",
+                  "id" : "36",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "ca34a68f-3fd0-4027-90f6-5e3be7bfffae"
+                  },
+                  "sourceId" : "13",
+                  "tags" : "Relationship"
+                } ],
+                "tags" : "Element,Infrastructure Node,Microsoft Azure - DNS Zones"
+              }, {
+                "description" : "Uses DNS-based routing to load balance incoming traffic across the two regions.",
+                "environment" : "Production",
+                "id" : "14",
+                "name" : "Azure Traffic Manager",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "trafficmanager"
+                },
+                "relationships" : [ {
+                  "description" : "DNS-based routing",
+                  "destinationId" : "15",
+                  "id" : "37",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "f7a1a4ca-1ecd-49d9-a0ba-3de93573134f"
+                  },
+                  "sourceId" : "14",
+                  "tags" : "Relationship"
+                } ],
+                "tags" : "Element,Infrastructure Node,Microsoft Azure - Traffic Manager Profiles"
+              }, {
+                "description" : "Receives HTTP(S) traffic from the browser and inspects it using the Web Application Firewall.",
+                "environment" : "Production",
+                "id" : "15",
+                "name" : "Azure Application Gateway",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "appgateway"
+                },
+                "relationships" : [ {
+                  "description" : "Routes traffic through",
+                  "destinationId" : "16",
+                  "id" : "38",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "a9c28b27-507e-40ee-8134-ab3ef884dfe0"
+                  },
+                  "sourceId" : "15",
+                  "tags" : "Relationship"
+                } ],
+                "tags" : "Element,Infrastructure Node,Microsoft Azure - Application Gateways"
+              }, {
+                "description" : "Intercepts traffic and applies TLS inspection for additional security.",
+                "environment" : "Production",
+                "id" : "16",
+                "name" : "Azure Firewall Premium",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "firewall"
+                },
+                "relationships" : [ {
+                  "description" : "Sends inspected traffic to",
+                  "destinationId" : "17",
+                  "id" : "39",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "eb5287bc-0225-4140-95ba-68387ec866b9"
+                  },
+                  "sourceId" : "16",
+                  "tags" : "Relationship"
+                } ],
+                "tags" : "Element,Infrastructure Node,Microsoft Azure - Firewalls"
+              }, {
+                "environment" : "Production",
+                "id" : "17",
+                "name" : "Microsoft Azure - Load Balancer (Front End)",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "frontendloadbalancer"
+                },
+                "relationships" : [ {
+                  "description" : "Load balances to",
+                  "destinationId" : "22",
+                  "id" : "40",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "c8c3f0d8-927f-4f6d-b0f0-cb3b37554b3d"
+                  },
+                  "sourceId" : "17",
+                  "tags" : "Relationship"
+                }, {
+                  "description" : "Load balances to",
+                  "destinationId" : "30",
+                  "id" : "41",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "e28aea89-2e99-4d40-b287-7351d1e4d2bf"
+                  },
+                  "sourceId" : "17",
+                  "tags" : "Relationship"
+                } ],
+                "tags" : "Element,Infrastructure Node,Microsoft Azure - Load Balancers"
+              }, {
+                "environment" : "Production",
+                "id" : "18",
+                "name" : "Microsoft Azure - Load Balancer (Back End)",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "backendloadbalancer"
+                },
+                "relationships" : [ {
+                  "description" : "Load balances to",
+                  "destinationId" : "24",
+                  "id" : "44",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "d53d1a20-1a5c-4f8a-893b-115cd95af9ae"
+                  },
+                  "sourceId" : "18",
+                  "tags" : "Relationship"
+                }, {
+                  "description" : "Load balances to",
+                  "destinationId" : "32",
+                  "id" : "45",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "90f49c8c-92e3-4e72-8e54-a3e3e88b5d26"
+                  },
+                  "sourceId" : "18",
+                  "tags" : "Relationship"
+                } ],
+                "tags" : "Element,Infrastructure Node,Microsoft Azure - Load Balancers"
+              }, {
+                "environment" : "Production",
+                "id" : "19",
+                "name" : "Microsoft Azure - Load Balancer (Database)",
+                "properties" : {
+                  "structurizr.dsl.identifier" : "databaseloadbalancer"
+                },
+                "relationships" : [ {
+                  "description" : "Load balances to",
+                  "destinationId" : "26",
+                  "id" : "48",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "cda84c0d-d85a-4eae-b312-48cdb7e180cf"
+                  },
+                  "sourceId" : "19",
+                  "tags" : "Relationship"
+                }, {
+                  "description" : "Load balances to",
+                  "destinationId" : "34",
+                  "id" : "49",
+                  "properties" : {
+                    "structurizr.dsl.identifier" : "3b4e4ae1-54d1-4a1d-9b93-2fe73546694b"
+                  },
+                  "sourceId" : "19",
+                  "tags" : "Relationship"
+                } ],
+                "tags" : "Element,Infrastructure Node,Microsoft Azure - Load Balancers"
+              } ],
+              "instances" : "1",
+              "name" : "Microsoft Azure - Virtual Network",
+              "properties" : {
+                "structurizr.dsl.identifier" : "vnet",
+                "networkAdmin" : "Network Team",
+                "cidr" : "10.0.0.0/16"
+              },
+              "tags" : "Element,Deployment Node,Microsoft Azure - Virtual Networks"
+            } ],
+            "environment" : "Production",
+            "id" : "11",
+            "instances" : "1",
+            "name" : "Microsoft Azure - Resource Groups",
+            "properties" : {
+              "structurizr.dsl.identifier" : "resourcegroup"
+            },
+            "tags" : "Element,Deployment Node,Microsoft Azure - Resource Groups"
+          } ],
+          "environment" : "Production",
+          "id" : "10",
+          "instances" : "1",
+          "name" : "Microsoft Azure - Region",
+          "properties" : {
+            "structurizr.dsl.identifier" : "region"
+          },
+          "tags" : "Element,Deployment Node,Microsoft Azure - Region"
+        } ],
+        "environment" : "Production",
+        "id" : "9",
+        "instances" : "1",
+        "name" : "Microsoft Azure - Subscriptions",
+        "properties" : {
+          "structurizr.dsl.identifier" : "subscription"
+        },
+        "tags" : "Element,Deployment Node,Microsoft Azure - Subscriptions"
+      } ],
+      "environment" : "Production",
+      "id" : "8",
+      "instances" : "1",
+      "name" : "Microsoft Azure",
+      "properties" : {
+        "structurizr.dsl.identifier" : "31b8faae-7e9d-4add-944a-4d3fe751e066",
+        "owner" : "Cloud Team"
+      },
+      "tags" : "Element,Deployment Node,Microsoft Azure - Cloud"
+    } ],
+    "people" : [ {
+      "description" : "A browser used to access the application",
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Browser",
+      "properties" : {
+        "structurizr.dsl.identifier" : "browser"
+      },
+      "relationships" : [ {
+        "description" : "Uses",
+        "destinationId" : "3",
+        "id" : "6",
+        "properties" : {
+          "structurizr.dsl.identifier" : "8fd8cd6d-a289-45ff-8004-8e1c6bc08f11"
+        },
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Uses",
+        "destinationId" : "2",
+        "id" : "7",
+        "linkedRelationshipId" : "6",
+        "sourceId" : "1"
+      } ],
+      "tags" : "Element,Person,Microsoft Azure - Browser"
+    } ],
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "description" : "The front-end application, typically a web or mobile application",
+        "documentation" : { },
+        "id" : "3",
+        "name" : "Front End",
+        "properties" : {
+          "structurizr.dsl.identifier" : "frontend"
+        },
+        "tags" : "Element,Container,Web Application",
+        "technology" : "Angular/React/Vue.js or similar"
+      }, {
+        "description" : "The back-end application providing APIs and business logic",
+        "documentation" : { },
+        "id" : "4",
+        "name" : "Back End",
+        "properties" : {
+          "structurizr.dsl.identifier" : "backend"
+        },
+        "tags" : "Element,Container,API Application",
+        "technology" : "Node.js/Java/.NET or similar"
+      }, {
+        "description" : "The database storing application data",
+        "documentation" : { },
+        "id" : "5",
+        "name" : "Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "tags" : "Element,Container,Database",
+        "technology" : "SQL/NoSQL database"
+      } ],
+      "description" : "A generic application with front end, back end, and database tiers",
+      "documentation" : { },
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Generic Application",
+      "properties" : {
+        "structurizr.dsl.identifier" : "genericapp"
+      },
+      "tags" : "Element,Software System,System"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBtb2RlbCB7CiAgICAgICAgYnJvd3NlciA9IHBlcnNvbiAiQnJvd3NlciIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQSBicm93c2VyIHVzZWQgdG8gYWNjZXNzIHRoZSBhcHBsaWNhdGlvbiIKICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gQnJvd3NlciIKICAgICAgICB9CgogICAgICAgIGdlbmVyaWNBcHAgPSBzb2Z0d2FyZVN5c3RlbSAiR2VuZXJpYyBBcHBsaWNhdGlvbiIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQSBnZW5lcmljIGFwcGxpY2F0aW9uIHdpdGggZnJvbnQgZW5kLCBiYWNrIGVuZCwgYW5kIGRhdGFiYXNlIHRpZXJzIgogICAgICAgICAgICB0YWdzICJTeXN0ZW0iCiAgICAgICAgICAgIAogICAgICAgICAgICBmcm9udEVuZCA9IGNvbnRhaW5lciAiRnJvbnQgRW5kIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiVGhlIGZyb250LWVuZCBhcHBsaWNhdGlvbiwgdHlwaWNhbGx5IGEgd2ViIG9yIG1vYmlsZSBhcHBsaWNhdGlvbiIKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkFuZ3VsYXIvUmVhY3QvVnVlLmpzIG9yIHNpbWlsYXIiCiAgICAgICAgICAgICAgICB0YWdzICJXZWIgQXBwbGljYXRpb24iCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGJhY2tFbmQgPSBjb250YWluZXIgIkJhY2sgRW5kIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiVGhlIGJhY2stZW5kIGFwcGxpY2F0aW9uIHByb3ZpZGluZyBBUElzIGFuZCBidXNpbmVzcyBsb2dpYyIKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIk5vZGUuanMvSmF2YS8uTkVUIG9yIHNpbWlsYXIiCiAgICAgICAgICAgICAgICB0YWdzICJBUEkgQXBwbGljYXRpb24iCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGRhdGFiYXNlID0gY29udGFpbmVyICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlRoZSBkYXRhYmFzZSBzdG9yaW5nIGFwcGxpY2F0aW9uIGRhdGEiCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJTUUwvTm9TUUwgZGF0YWJhc2UiCiAgICAgICAgICAgICAgICB0YWdzICJEYXRhYmFzZSIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgYnJvd3NlciAtPiBmcm9udEVuZCAiVXNlcyIKICAgICAgICB9CgogICAgICAgIHByb2R1Y3Rpb24gPSBkZXBsb3ltZW50RW52aXJvbm1lbnQgIlByb2R1Y3Rpb24iIHsKICAgICAgICAgICAgZGVwbG95bWVudE5vZGUgIk1pY3Jvc29mdCBBenVyZSIgewogICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gQ2xvdWQiCiAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAib3duZXIiICJDbG91ZCBUZWFtIgogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIHN1YnNjcmlwdGlvbiA9IGRlcGxveW1lbnROb2RlICJNaWNyb3NvZnQgQXp1cmUgLSBTdWJzY3JpcHRpb25zIiB7CiAgICAgICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gU3Vic2NyaXB0aW9ucyIKCiAgICAgICAgICAgICAgICAgICAgcmVnaW9uID0gZGVwbG95bWVudE5vZGUgIk1pY3Jvc29mdCBBenVyZSAtIFJlZ2lvbiIgewogICAgICAgICAgICAgICAgICAgICAgICB0YWdzICJNaWNyb3NvZnQgQXp1cmUgLSBSZWdpb24iCgogICAgICAgICAgICAgICAgICAgICAgICByZXNvdXJjZUdyb3VwID0gZGVwbG95bWVudE5vZGUgIk1pY3Jvc29mdCBBenVyZSAtIFJlc291cmNlIEdyb3VwcyIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gUmVzb3VyY2UgR3JvdXBzIgoKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZuZXQgPSBkZXBsb3ltZW50Tm9kZSAiTWljcm9zb2Z0IEF6dXJlIC0gVmlydHVhbCBOZXR3b3JrIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gVmlydHVhbCBOZXR3b3JrcyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIm5ldHdvcmtBZG1pbiIgIk5ldHdvcmsgVGVhbSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImNpZHIiICIxMC4wLjAuMC8xNiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRucyA9IGluZnJhc3RydWN0dXJlTm9kZSAiUmVjdXJzaXZlIEROUyIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YWdzICJNaWNyb3NvZnQgQXp1cmUgLSBETlMgWm9uZXMiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJIYW5kbGVzIEROUyByZXNvbHV0aW9uIGZvciBpbmNvbWluZyByZXF1ZXN0cy4iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0cmFmZmljTWFuYWdlciA9IGluZnJhc3RydWN0dXJlTm9kZSAiQXp1cmUgVHJhZmZpYyBNYW5hZ2VyIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIk1pY3Jvc29mdCBBenVyZSAtIFRyYWZmaWMgTWFuYWdlciBQcm9maWxlcyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlVzZXMgRE5TLWJhc2VkIHJvdXRpbmcgdG8gbG9hZCBiYWxhbmNlIGluY29taW5nIHRyYWZmaWMgYWNyb3NzIHRoZSB0d28gcmVnaW9ucy4iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBhcHBHYXRld2F5ID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJBenVyZSBBcHBsaWNhdGlvbiBHYXRld2F5IiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIk1pY3Jvc29mdCBBenVyZSAtIEFwcGxpY2F0aW9uIEdhdGV3YXlzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiUmVjZWl2ZXMgSFRUUChTKSB0cmFmZmljIGZyb20gdGhlIGJyb3dzZXIgYW5kIGluc3BlY3RzIGl0IHVzaW5nIHRoZSBXZWIgQXBwbGljYXRpb24gRmlyZXdhbGwuIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmlyZXdhbGwgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIkF6dXJlIEZpcmV3YWxsIFByZW1pdW0iIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gRmlyZXdhbGxzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSW50ZXJjZXB0cyB0cmFmZmljIGFuZCBhcHBsaWVzIFRMUyBpbnNwZWN0aW9uIGZvciBhZGRpdGlvbmFsIHNlY3VyaXR5LiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZyb250ZW5kTG9hZEJhbGFuY2VyID0gaW5mcmFzdHJ1Y3R1cmVOb2RlICJNaWNyb3NvZnQgQXp1cmUgLSBMb2FkIEJhbGFuY2VyIChGcm9udCBFbmQpIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIk1pY3Jvc29mdCBBenVyZSAtIExvYWQgQmFsYW5jZXJzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYmFja2VuZExvYWRCYWxhbmNlciA9IGluZnJhc3RydWN0dXJlTm9kZSAiTWljcm9zb2Z0IEF6dXJlIC0gTG9hZCBCYWxhbmNlciAoQmFjayBFbmQpIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIk1pY3Jvc29mdCBBenVyZSAtIExvYWQgQmFsYW5jZXJzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGF0YWJhc2VMb2FkQmFsYW5jZXIgPSBpbmZyYXN0cnVjdHVyZU5vZGUgIk1pY3Jvc29mdCBBenVyZSAtIExvYWQgQmFsYW5jZXIgKERhdGFiYXNlKSIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YWdzICJNaWNyb3NvZnQgQXp1cmUgLSBMb2FkIEJhbGFuY2VycyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIFpvbmUgMQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF2YWlsYWJpbGl0eVpvbmUxID0gZGVwbG95bWVudE5vZGUgIkF2YWlsYWJpbGl0eSBab25lIDEiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gQXZhaWxhYmlsaXR5IFpvbmVzIgoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3VibmV0MSA9IGRlcGxveW1lbnROb2RlICJNaWNyb3NvZnQgQXp1cmUgLSBTdWJuZXQgMSIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gU3VibmV0cyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJhdmFpbGFiaWxpdHlab25lIiAiMSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2bXNzRnJvbnRFbmQxID0gZGVwbG95bWVudE5vZGUgIk1pY3Jvc29mdCBBenVyZSAtIFZNIFNjYWxlIFNldHMgKEZyb250IEVuZCkgMSIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIk1pY3Jvc29mdCBBenVyZSAtIFZNIFNjYWxlIFNldHMiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgZnJvbnRFbmQKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2bXNzQmFja0VuZDEgPSBkZXBsb3ltZW50Tm9kZSAiTWljcm9zb2Z0IEF6dXJlIC0gVk0gU2NhbGUgU2V0cyAoQmFjayBFbmQpIDEiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YWdzICJNaWNyb3NvZnQgQXp1cmUgLSBWTSBTY2FsZSBTZXRzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lckluc3RhbmNlIGJhY2tFbmQKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzcWxEYXRhYmFzZTEgPSBkZXBsb3ltZW50Tm9kZSAiTWljcm9zb2Z0IEF6dXJlIC0gU1FMIERhdGFiYXNlIDEiIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YWdzICJNaWNyb3NvZnQgQXp1cmUgLSBTUUwgRGF0YWJhc2UiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgZGF0YWJhc2UKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gWm9uZSAyCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYXZhaWxhYmlsaXR5Wm9uZTIgPSBkZXBsb3ltZW50Tm9kZSAiQXZhaWxhYmlsaXR5IFpvbmUgMiIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YWdzICJNaWNyb3NvZnQgQXp1cmUgLSBBdmFpbGFiaWxpdHkgWm9uZXMiCgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdWJuZXQyID0gZGVwbG95bWVudE5vZGUgIk1pY3Jvc29mdCBBenVyZSAtIFN1Ym5ldCAyIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0YWdzICJNaWNyb3NvZnQgQXp1cmUgLSBTdWJuZXRzIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgImF2YWlsYWJpbGl0eVpvbmUiICIyIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZtc3NGcm9udEVuZDIgPSBkZXBsb3ltZW50Tm9kZSAiTWljcm9zb2Z0IEF6dXJlIC0gVk0gU2NhbGUgU2V0cyAoRnJvbnQgRW5kKSAyIiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFncyAiTWljcm9zb2Z0IEF6dXJlIC0gVk0gU2NhbGUgU2V0cyIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBmcm9udEVuZAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZtc3NCYWNrRW5kMiA9IGRlcGxveW1lbnROb2RlICJNaWNyb3NvZnQgQXp1cmUgLSBWTSBTY2FsZSBTZXRzIChCYWNrIEVuZCkgMiIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIk1pY3Jvc29mdCBBenVyZSAtIFZNIFNjYWxlIFNldHMiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29udGFpbmVySW5zdGFuY2UgYmFja0VuZAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNxbERhdGFiYXNlMiA9IGRlcGxveW1lbnROb2RlICJNaWNyb3NvZnQgQXp1cmUgLSBTUUwgRGF0YWJhc2UgMiIgewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhZ3MgIk1pY3Jvc29mdCBBenVyZSAtIFNRTCBEYXRhYmFzZSIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250YWluZXJJbnN0YW5jZSBkYXRhYmFzZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAvLyBSZWxhdGlvbnNoaXBzIHdpdGhpbiB0aGUgZGVwbG95bWVudCBlbnZpcm9ubWVudAogICAgICAgIGRucyAtPiB0cmFmZmljTWFuYWdlciAiUmVzb2x2ZXMgRE5TIHF1ZXJpZXMgdG8iCiAgICAgICAgdHJhZmZpY01hbmFnZXIgLT4gYXBwR2F0ZXdheSAiRE5TLWJhc2VkIHJvdXRpbmciCiAgICAgICAgYXBwR2F0ZXdheSAtPiBmaXJld2FsbCAiUm91dGVzIHRyYWZmaWMgdGhyb3VnaCIKICAgICAgICBmaXJld2FsbCAtPiBmcm9udGVuZExvYWRCYWxhbmNlciAiU2VuZHMgaW5zcGVjdGVkIHRyYWZmaWMgdG8iCiAgICAgICAgZnJvbnRlbmRMb2FkQmFsYW5jZXIgLT4gdm1zc0Zyb250RW5kMSAiTG9hZCBiYWxhbmNlcyB0byIKICAgICAgICBmcm9udGVuZExvYWRCYWxhbmNlciAtPiB2bXNzRnJvbnRFbmQyICJMb2FkIGJhbGFuY2VzIHRvIgogICAgICAgIHZtc3NGcm9udEVuZDEgLT4gYmFja2VuZExvYWRCYWxhbmNlciAiU2VuZHMgcmVxdWVzdHMgdG8iCiAgICAgICAgdm1zc0Zyb250RW5kMiAtPiBiYWNrZW5kTG9hZEJhbGFuY2VyICJTZW5kcyByZXF1ZXN0cyB0byIKICAgICAgICBiYWNrZW5kTG9hZEJhbGFuY2VyIC0+IHZtc3NCYWNrRW5kMSAiTG9hZCBiYWxhbmNlcyB0byIKICAgICAgICBiYWNrZW5kTG9hZEJhbGFuY2VyIC0+IHZtc3NCYWNrRW5kMiAiTG9hZCBiYWxhbmNlcyB0byIKICAgICAgICB2bXNzQmFja0VuZDEgLT4gZGF0YWJhc2VMb2FkQmFsYW5jZXIgIlNlbmRzIHJlcXVlc3RzIHRvIgogICAgICAgIHZtc3NCYWNrRW5kMiAtPiBkYXRhYmFzZUxvYWRCYWxhbmNlciAiU2VuZHMgcmVxdWVzdHMgdG8iCiAgICAgICAgZGF0YWJhc2VMb2FkQmFsYW5jZXIgLT4gc3FsRGF0YWJhc2UxICJMb2FkIGJhbGFuY2VzIHRvIgogICAgICAgIGRhdGFiYXNlTG9hZEJhbGFuY2VyIC0+IHNxbERhdGFiYXNlMiAiTG9hZCBiYWxhbmNlcyB0byIKICAgIH0KCiAgICB2aWV3cyB7CiAgICAgICAgc3lzdGVtQ29udGV4dCBnZW5lcmljQXBwIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgfQoKICAgICAgICBjb250YWluZXIgZ2VuZXJpY0FwcCB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgZGVwbG95bWVudCBnZW5lcmljQXBwICJQcm9kdWN0aW9uIiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgIH0KCiAgICAgICAgdGhlbWUgImh0dHBzOi8vc3RhdGljLnN0cnVjdHVyaXpyLmNvbS90aGVtZXMvbWljcm9zb2Z0LWF6dXJlLTIwMjMuMDEuMjQvdGhlbWUuanNvbiIKICAgIH0KfQo="
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Deployment-001",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : { },
+      "terminology" : { },
+      "themes" : [ "https://static.structurizr.com/themes/microsoft-azure-2023.01.24/theme.json" ]
+    },
+    "containerViews" : [ {
+      "dimensions" : {
+        "height" : 2011,
+        "width" : 1620
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 219
+      }, {
+        "id" : "3",
+        "x" : 950,
+        "y" : 219
+      }, {
+        "id" : "4",
+        "x" : 950,
+        "y" : 819
+      }, {
+        "id" : "5",
+        "x" : 950,
+        "y" : 1419
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Container-001",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "6"
+      } ],
+      "softwareSystemId" : "2"
+    } ],
+    "deploymentViews" : [ {
+      "dimensions" : {
+        "height" : 2958,
+        "width" : 6373
+      },
+      "elements" : [ {
+        "id" : "8",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "9",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "10",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "11",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "12",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "13",
+        "x" : 300,
+        "y" : 1095
+      }, {
+        "id" : "14",
+        "x" : 945,
+        "y" : 1095
+      }, {
+        "id" : "15",
+        "x" : 1560,
+        "y" : 1095
+      }, {
+        "id" : "16",
+        "x" : 2195,
+        "y" : 1100
+      }, {
+        "id" : "17",
+        "x" : 2885,
+        "y" : 1100
+      }, {
+        "id" : "18",
+        "x" : 4010,
+        "y" : 1104
+      }, {
+        "id" : "19",
+        "x" : 5040,
+        "y" : 1104
+      }, {
+        "id" : "20",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "21",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "22",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "23",
+        "x" : 3525,
+        "y" : 374
+      }, {
+        "id" : "24",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "25",
+        "x" : 4483,
+        "y" : 359
+      }, {
+        "id" : "26",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "27",
+        "x" : 5563,
+        "y" : 378
+      }, {
+        "id" : "28",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "29",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "30",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "31",
+        "x" : 3475,
+        "y" : 1659
+      }, {
+        "id" : "32",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "33",
+        "x" : 4530,
+        "y" : 1714
+      }, {
+        "id" : "34",
+        "x" : 175,
+        "y" : 175
+      }, {
+        "id" : "35",
+        "x" : 5530,
+        "y" : 1729
+      } ],
+      "environment" : "Production",
+      "generatedKey" : true,
+      "key" : "Deployment-001",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "36"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "38"
+      }, {
+        "id" : "39"
+      }, {
+        "id" : "40"
+      }, {
+        "id" : "41"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "43"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "45"
+      }, {
+        "id" : "46"
+      }, {
+        "id" : "47"
+      }, {
+        "id" : "48"
+      }, {
+        "id" : "49"
+      } ],
+      "softwareSystemId" : "2"
+    } ],
+    "systemContextViews" : [ {
+      "dimensions" : {
+        "height" : 700,
+        "width" : 1600
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 199
+      }, {
+        "id" : "2",
+        "x" : 950,
+        "y" : 199
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "7"
+      } ],
+      "softwareSystemId" : "2"
+    } ]
+  }
+}
