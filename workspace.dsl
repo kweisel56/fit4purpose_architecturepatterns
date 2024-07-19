@@ -1,9 +1,9 @@
 workspace {
 
     model {
-        browser = person "Browser" {
-            description "A browser used to access the application"
-            tags "Microsoft Azure - Browser"
+        user = person "User" {
+            description "A user interacting with the application"
+            tags "Person"
         }
 
         genericApp = softwareSystem "Generic Application" {
@@ -28,7 +28,7 @@ workspace {
                 tags "Database"
             }
 
-            browser -> frontEnd "Uses"
+            user -> frontEnd "Uses"
         }
 
         production = deploymentEnvironment "Production" {
@@ -38,11 +38,21 @@ workspace {
                     "owner" "Cloud Team"
                 }
 
+                productionUser = deploymentNode "Production User" {
+                    tags "Microsoft Azure - Browser"
+                    description "A browser used to access the application"
+                }
+
+                dns = deploymentNode "Recursive DNS" {
+                    tags "Microsoft Azure - DNS Zones"
+                    description "Handles DNS resolution for incoming requests."
+                }
+        
                 subscription = deploymentNode "Microsoft Azure - Subscriptions" {
                     tags "Microsoft Azure - Subscriptions"
 
                     region = deploymentNode "Microsoft Azure - Region" {
-                        tags "Microsoft Azure - Region"
+                        tags "Microsoft Azure - Regions"
 
                         resourceGroup = deploymentNode "Microsoft Azure - Resource Groups" {
                             tags "Microsoft Azure - Resource Groups"
@@ -52,11 +62,6 @@ workspace {
                                 properties {
                                     "networkAdmin" "Network Team"
                                     "cidr" "10.0.0.0/16"
-                                }
-
-                                dns = infrastructureNode "Recursive DNS" {
-                                    tags "Microsoft Azure - DNS Zones"
-                                    description "Handles DNS resolution for incoming requests."
                                 }
 
                                 trafficManager = infrastructureNode "Azure Traffic Manager" {
@@ -107,7 +112,7 @@ workspace {
                                         }
 
                                         sqlDatabase1 = deploymentNode "Microsoft Azure - SQL Database 1" {
-                                            tags "Microsoft Azure - SQL Database"
+                                            tags "Microsoft Azure - Azure SQL"
                                             containerInstance database
                                         }
                                     }
@@ -134,7 +139,7 @@ workspace {
                                         }
 
                                         sqlDatabase2 = deploymentNode "Microsoft Azure - SQL Database 2" {
-                                            tags "Microsoft Azure - SQL Database"
+                                            tags "Microsoft Azure - Azure SQL"
                                             containerInstance database
                                         }
                                     }
@@ -147,6 +152,7 @@ workspace {
         }
 
         // Relationships within the deployment environment
+        productionUser -> dns "Initiates DNS resolution"
         dns -> trafficManager "Resolves DNS queries to"
         trafficManager -> appGateway "DNS-based routing"
         appGateway -> firewall "Routes traffic through"
@@ -174,6 +180,8 @@ workspace {
 
         deployment genericApp "Production" {
             include *
+            include productionUser
+            include dns
         }
 
         theme "https://static.structurizr.com/themes/microsoft-azure-2023.01.24/theme.json"
